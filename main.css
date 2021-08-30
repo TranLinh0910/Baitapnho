@@ -5,10 +5,12 @@
 }
 body {
   background-color: #cad3d3;
-  font-family: "STIX Two Math", serif;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container {
-  margin: 10px 0 0 20px;
+margin: auto;
+  padding: 5%;
+  width: auto;
 }
 .row {
   display: flex;
@@ -17,15 +19,91 @@ body {
 .col {
   margin-right: 30px;
   text-align: center;
-  background-color: #ffffff;
 }
 .col .price {
   border: 1px solid #ccc;
-  height: 50px;
+  height: 100px;
   color: #2196f7;
+  width: 100px;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
 }
+.price-1{
+  font-size: 20px;
+margin-top: 30px;
+
+}
+.text-aline-1{
+  font-size: 8px;
+  color: #99a9b5;
+
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.new{
+z-index: 100;
+position: absolute;
+
+}
+.img-new{
+  position: absolute;
+  top:-20px;
+  left: -10px;
+}
+.text-new{
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  color: white;
+  left:7px;
+}
+
+
 .image img {
   width: 280px;
+}
+.text-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:100px;
+  bottom: 0;
+  text-align: center;
+  color: white;
+font-weight: 100;
+  
+}
+.text-img h1{
+  font-weight: 100;
+
+}
+.text-aline-2{
+  font-size: 10px;
+  font-weight: 10;
+}
+.bg-black{
+  background-color:#2c2e3d;
+}
+.bg-violet{
+  color: #d74498;
+}
+.bg-green{
+ color: #32ad1e;
+}
+.bg-white{
+  background-color: white;
+}
+.rounded-full{
+  border-radius: 100%;
+
 }
 .container .header-text h3 {
   font-size: 18px;
