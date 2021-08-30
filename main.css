@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #cad3d3;
+  font-family: "STIX Two Math", serif;
+}
+.container {
+  margin: 10px 0 0 20px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  margin-right: 30px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.col .price {
+  border: 1px solid #ccc;
+  height: 50px;
+  color: #2196f7;
+  
+}
+.image img {
+  width: 280px;
+}
+
+.container .header-text h3 {
+  font-size: 18px;
+  color: #6e7e8a;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.container .header-text p {
+  font-size: 10px;
+  color: #99a9b5;
+  margin: 2px 0 20px 0;
+}
+.list-text ul li {
+  list-style: none;
+  color: #909ca4;
+  font-size: 13px;
+}
+.list-text ul .active {
+  background-color: #f4f6f7;
+  padding: 13px 0 13px 0;
+}
+.list-text ul .no-active {
+  padding: 13px 0 13px 0;
+}
+.col button {
+  background-color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 1px;
+  margin: 40px 40px;
+  cursor: pointer;
+}
+.col .submit-card-1 {
+  color: #5cb2f9;
+  background-color: white;
+  border: 1px solid #5cb2f9;
+}
+.col .submit-card-1:hover {
+  color: #ffffff;
+  background-color: #5cb2f9;
+  border: 1px solid #5cb2f9;
+}
+.col .submit-card-2 {
+  color: #6c136f;
+  background-color: white;
+  border: 1px solid #6c136f;
+}
+.col .submit-card-2:hover {
+  color: #fff;
+  background-color: #6c136f;
+  border: 1px solid #6c136f;
+}
+.col .submit-card-3 {
+  color: #32ad1e;
+  background-color: white;
+  border: 1px solid #32ad1e;
+}
+.col .submit-card-3:hover {
+  color: #fff;
+  background-color: #32ad1e;
+  border: 1px solid #32ad1e;
+}
