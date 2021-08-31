@@ -5,20 +5,23 @@
 }
 body {
   background-color: #cad3d3;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
-margin: auto;
+  margin: auto;
   padding: 5%;
-  width: auto;
+  width: 1200px;
 }
 .row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap:1rem;
 }
 .col {
-  margin-right: 30px;
+  
   text-align: center;
+  position: relative;
 }
 .col .price {
   border: 1px solid #ccc;
@@ -26,84 +29,78 @@ margin: auto;
   color: #2196f7;
   width: 100px;
   position: absolute;
-  top:0;
+  top: 0;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
 }
-.price-1{
+.price-1 {
   font-size: 20px;
-margin-top: 30px;
-
+  margin-top: 30px;
 }
-.text-aline-1{
+.text-aline-1 {
   font-size: 8px;
   color: #99a9b5;
-
 }
-.relative{
+.relative {
   position: relative;
 }
-.absolute{
+.absolute {
   position: absolute;
 }
-.new{
-z-index: 100;
-position: absolute;
-
-}
-.img-new{
+.new {
+  z-index: 100;
   position: absolute;
-  top:-20px;
+}
+.img-new {
+  position: absolute;
+  top: -20px;
   left: -10px;
 }
-.text-new{
+.text-new {
   position: absolute;
   z-index: 100;
   width: 100%;
   height: 100%;
   color: white;
-  left:7px;
+  left: 7px;
 }
-
 
 .image img {
-  width: 280px;
+  width: 100%;
+  
 }
-.text-img{
+.text-img {
   position: absolute;
   width: 100%;
   height: 100%;
-  top:70px;
+  top: 70px;
   bottom: 0;
   text-align: center;
   color: white;
-font-weight: 100;
-  
-}
-.text-img h1{
   font-weight: 100;
-
 }
-.text-aline-2{
+.text-img h1 {
+  font-weight: 100;
+}
+.text-aline-2 {
   font-size: 10px;
   font-weight: 10;
 }
-.bg-black{
-  background-color:#2c2e3d;
+.bg-black {
+  background-color: #2c2e3d;
 }
-.bg-violet{
+.bg-violet {
   color: #d74498;
 }
-.bg-green{
- color: #32ad1e;
+.bg-green {
+  color: #32ad1e;
 }
-.bg-white{
+.bg-white {
   background-color: white;
 }
-.rounded-full{
+.rounded-full {
   border-radius: 100%;
-
 }
 .container .header-text h3 {
   font-size: 18px;
@@ -166,4 +163,18 @@ font-weight: 100;
   color: #fff;
   background-color: #32ad1e;
   border: 1px solid #32ad1e;
+}
+/*responsive*/
+@media all and (max-width: 700px) {
+  .container {
+    width: auto;
+    margin: auto;
+    padding: 100px 0;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap:1rem;
+  }
 }
